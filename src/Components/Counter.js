@@ -17,7 +17,7 @@ export default function Counter(){
     const addFive = ()=>{
         
         for (let index = 0; index < 5; index++) {
-           setCount(count+1)
+           setCount((prevState)=>(prevState+1));
         }
     };
 
