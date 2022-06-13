@@ -11,7 +11,7 @@ export default class MyComponent extends React.Component{
 
     componentDidMount(){
         const { count } = this.state;
-        document.title = `Clicked ${count} times`;
+        document.title = `click ${count} times`;
         this.Interval = setInterval(() =>{
             this.tick()
         },1000)
@@ -21,7 +21,7 @@ export default class MyComponent extends React.Component{
 
     UNSAFE_componentWillUpdate(){
         const {count} = this.state;
-        document.title = `Clicked ${count} times`;
+        document.title = `click ${count} times`;
     }
 
 
