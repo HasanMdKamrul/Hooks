@@ -1,1 +1,1 @@
-<h1>Simple useState() hook <h1>
+<h1>Diffeerent type of hooks() <h1>
