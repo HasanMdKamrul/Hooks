@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import InputForworded from './Components/Input';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
   return (
     <div>
      <p>
-      <input ref={Inputref} type="text" placeholder="Enter Something" />
+      <InputForworded ref={Inputref} type="text" placeholder="Enter Something" />
      </p>
     </div>
   );
