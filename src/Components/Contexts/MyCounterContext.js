@@ -1,6 +1,6 @@
 
 import React from 'react';
 
-const myCounterContext = React.createContext();
+const MyCounterContext = React.createContext();
 
-export default myCounterContext;
+export default MyCounterContext;

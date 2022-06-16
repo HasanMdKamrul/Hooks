@@ -20,6 +20,7 @@
   "rules": {
     // "react/jsx-no-undef": 0,
     // "react-hooks/exhaustive-deps": 0,
+    "no-shadow": 0,
     "object-shorthand": 0,
     "no-sequences": 0,
     "react/jsx-no-constructed-context-values": 0,
