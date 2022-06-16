@@ -1,12 +1,12 @@
-import Time from './Components/Time';
+import CounterReduce from "./Components/CounterReduce";
 
 function App() {
 
   return (
     <div>
-     <Time />
+      <CounterReduce />
     </div>
-  );
+  )
 }
 
 export default App;
