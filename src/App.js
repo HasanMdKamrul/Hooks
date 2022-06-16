@@ -1,10 +1,10 @@
-import CounterReduce from "./Components/CounterReduce";
+import CounetrThreeEx from './Components/CounterThreeEx';
 
 function App() {
 
   return (
     <div>
-      <CounterReduce />
+      <CounetrThreeEx />
     </div>
   )
 }
