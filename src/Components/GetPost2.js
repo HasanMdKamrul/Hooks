@@ -39,7 +39,7 @@ export default function GetPost2(){
                 dispatch({
                     type: 'Success',
                     result: data,
-                })
+                }) 
             })
             .catch(()=>{
                 dispatch({

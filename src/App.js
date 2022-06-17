@@ -1,14 +1,11 @@
-import GetPost2 from './Components/GetPost2';
-
-
+import ScreenSizeWindow from './Components/ScreenSizeWindow';
 
 function App() {
  
-
   return (
     
     <div>
-      <GetPost2 />
+     <ScreenSizeWindow />
     </div>
   )
 }

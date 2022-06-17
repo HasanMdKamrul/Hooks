@@ -18,8 +18,7 @@ export default function GetPost(){
                 setError('Something is Wrong');
                 setPost('');
             })
-    },[])
-
+    },[]);
 
     return(
         <div>
