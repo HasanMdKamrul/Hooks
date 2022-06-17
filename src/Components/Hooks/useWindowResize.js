@@ -1,17 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export default function useWindowResize (screenSize) {
 
     const [onSmallScreen, setOnSmallScreen] = useState(false);
 
-
+    const screenSizeCheck = useCallback(()=>{
+        setOnSmallScreen(window.innerWidth > screenSize);
+    },[screenSize])
 
     useEffect(()=>{
-
-        const screenSizeCheck = ()=>{
-            setOnSmallScreen(window.innerWidth > screenSize);
-        }
-
         screenSizeCheck();
 
         window.addEventListener('resize',screenSizeCheck);
@@ -20,8 +17,7 @@ export default function useWindowResize (screenSize) {
             window.removeEventListener('resize',screenSizeCheck);
         };
 
-    },[screenSize])
-
+    },[screenSizeCheck])
 
     return onSmallScreen;
 }
